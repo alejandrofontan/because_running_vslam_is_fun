@@ -1,0 +1,25 @@
+Because running VSLAM is fun (1.3) 📷🧭📍
+
+Taking a random YouTube video, the kind filmed just for fun, and throwing it at our systems to see what happens.
+
+🎬 Video: https://lnkd.in/g7T9Qe-P
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+
+This time: footage from a DJI FPV Drone with a GoPro Hero 8 mounted on top, flying through Fjaðrárgljúfur canyon in Iceland. A steep-walled gorge carved by glacial meltwater. Stunning scenery, and a challenging sequence for any VSLAM system.
+
+Starting from a single YAML file, I ran it through three VSLAM systems: MASt3R-SLAM, DROID-SLAM and AllFeature-VSLAM — our system, tightly coupling ORB + SuperPoint features. And compare the estimated trajectories with the one estimated from SfM GLOMAP
+
+Every experiment is fully reproducible with a single command:
+
+pixi run vslamlab configs/test_exp_youtube.yaml --overwrite
+
+Real-world, uncontrolled footage, no lab setup, no carefully curated benchmark, just a drone flying through a canyon and algorithms trying to make sense of it all.
+
+🎬 Original Drone footage taken by Joshua Turner: https://lnkd.in/gAuCBsnM
+
+Previous post: https://lnkd.in/gb9GX5Cr - AllFeature-VSLAM runs in MADMAX dataset
+
+hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics 
+hashtag#ComputerVision hashtag#VSLAMLAB hashtag#GOPRO hashtag#FPV
+
+🎬 Video: https://lnkd.in/g7T9Qe-P

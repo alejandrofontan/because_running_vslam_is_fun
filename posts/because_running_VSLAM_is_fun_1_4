@@ -1,0 +1,35 @@
+Because running VSLAM is fun (1.4) 📷🧭📍
+
+🎬 Video:https://youtu.be/mLIFRiAxRs4
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+
+Using the Stray Scanner App, I recorded an RGB-D dataset at Old Parliament House, straight from a LiDAR-enabled iPhone. The app gives direct access to the raw RGB-D video it captures, and outputs a simple .zip file with your data.
+
+One command converts that recording into the VSLAM-LAB format (rgb, depth, intrinsics, poses). From that point, every system available in VSLAM-LAB runs on your footage with zero additional effort — MASt3R-SLAM, DROID-SLAM, DPVO, VGGT-SLAM, COLMAP, AllFeature-VSLAM ...:
+
+pixi run demo orbslam3 strayscanner old_parliament_house rgbd
+
+You can also interactively visualise any VSLAM-LAB dataset:
+
+pixi run rerun-vis eth table_3
+
+🎬 Video: https://youtu.be/wbtJo3ZHWH0
+
+The gap between "I just filmed something" and "I have SLAM results  is now one command.
+
+Huge thanks to Nicolas Marticorena — the swiss-army-knife of robotics — who made the pull request that brought Stray Scanner support into VSLAM-LAB.
+cc: Arihant — more on AI skills and VSLAM-LAB Workshop soon
+
+To the Stray Robots team for building and open-sourcing the Stray Scanner App.
+📦 App: https://github.com/strayrobots/scanner
+
+To the rerun team for building and open-sourcing the rerun visualiser.
+👁 Rerun — https://rerun.io | https://github.com/rerun-io/rerun
+cc: Pablo Vela — I cannot keep up with your implementation pace, but I'll try to :)
+
+Previous post: [PREVIOUS_POST_LINK] - AllFeature-VSLAM, DROID-SLAM and MASt3R-SLAM run Fjaðrárgljúfur canyon in Iceland
+
+hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
+hashtag#ComputerVision hashtag#VSLAMLAB hashtag#iOS hashtag#LiDAR hashtag#RGBDepth hashtag#rerun
+
+🎬 Video: https://youtu.be/mLIFRiAxRs4

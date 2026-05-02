@@ -1,0 +1,30 @@
+Because running VSLAM is fun (1.2) 📷🧭📍
+
+Following up on the previous experiments, I ran our latest system, AllFeature-VSLAM, tightly coupling multiple feature types (ORB, SIFT and SuperPoint).
+
+🎬 Video: https://lnkd.in/gtFMjWBn
+
+This time using the #MADMAX dataset — a Mars-analog dataset acquired in the Moroccan desert using DLR’s portable SUPER sensor unit. It includes 36 navigation experiments across 8 diverse sites, with over 9.2 km of trajectories, covering challenging environmental conditions such as illumination changes, texture scarcity, and varying terrain.
+
+The dataset provides synchronized multi-sensor data (stereo, mono, omnidirectional cameras + IMU) along with high-accuracy ground truth in position and orientation, obtained via RTK-GNSS fusion. 
+
+The  experiments are fully reproducible using #VSLAMLAB with a single command:
+
+pixi run demo allfeature-dev madmax A-0
+
+We maintain #VSLAMLAB with 0 open pull requests, 0 open issues, and growing momentum — ⭐ 483 stars · 🍴 60 forks.
+
+Huge thanks to the authors of the MADMAX dataset: Lukas Burkhard, Michal Smisek, German Aerospace Center (DLR), DLR Institute of Robotics and Mechatronics, and others
+
+📄 Paper: https://lnkd.in/gY9FtNs4
+📦 Dataset: https://lnkd.in/g2A7nNum
+
+cc: Clayder Gonzalez Cadenillas, Ted Vanderfeen, Thierry Peynot
+
+Next Post: https://lnkd.in/g9VvGMtM - AllFeature-VSLAM, DROID-SLAM and MASt3R-SLAM run Fjaðrárgljúfur canyon in Iceland
+
+Previous Post: https://lnkd.in/gaHVCw7T - AllFeature-VSLAM meets Marine Conservation
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics #ComputerVision
+
+https://lnkd.in/gtFMjWBn

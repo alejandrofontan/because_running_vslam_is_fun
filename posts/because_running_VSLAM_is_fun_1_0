@@ -1,0 +1,23 @@
+Because running VSLAM is fun (1.0) 📷🧭📍
+
+Last Monday I had the opportunity to run some experiments at the #QUT Space Technology Precinct (Yandiwanba) at the QUT (Queensland University of Technology) (Kelvin Grove campus).
+
+📽 Video: https://lnkd.in/gB9afryj
+
+🌙 Yandiwanba is a lunar simulation lab designed to evaluate planetary rover missions in realistic conditions, equipped with space robotics hardware and advanced sensing systems. The name Yandiwanba (Yan-dee-wan-ba) comes from the Yagarabul language and means “to go from below to above,” or “from the ground to a higher place, way above.” 
+
+During the session I collected a dataset using a #GoPro and quickly generated: camera calibration and  a reference trajectory using structure-from-motion with #GLOMAP.
+
+I then ran our latest system, AllFeature-VSLAM, which tightly couples multiple types of features (ORB and ALIKED in this case).
+
+The dataset and experiments are fully reproducible using #VSLAMLAB with a single command: 
+
+pixi run demo allfeature-dev videos GX010216
+
+Huge thanks to everyone involved in the testing session: Clayder Gonzalez Cadenillas, Thierry Peynot, Michael Milford, Will Browne, Callum Veraa, Dmitry Bratanov, Garima Samvedi, Andrew Keir, QUT Research Engineering Facility - Flight Operations & Remote Sensing, QUT (Queensland University of Technology), QUT Centre for Robotics, ARC LIEF grant LE220100075 (“Space Resources Environmental Analogue Facility”), and everyone who builds and maintains the Yandiwanba facilities.
+
+cc: Javier Civera, Tobias Fischer, Riccardo Giubilato, Lukas Burkhard
+
+#VSLAM #SpatialAI #SpaceRobotics #SLAM #VisualSLAM #Robotics #ComputerVision
+
+Next Post: https://lnkd.in/gqv3pTqz - AllFeature-VSLAM meets Marine Conservation

@@ -1,0 +1,27 @@
+Because running VSLAM is fun (1.1) 📷🧭📍
+
+Last months I had the pleasure of collaborating with Dr Brett Lewis and Professor Scott Bryan and his team on the 3D reconstruction of underwater coral ecosystems.
+
+🪸🌊 Specifically we (Emilio Olivastri and me) got access to video footage from the project "Restoring Blast-Damaged Sloping Reefs with Community-Driven, Low-Cost 3D Printed Solutions" conducted by Tropical Research And Conservation Centre (TRACC) and lead by Robin Philippo.
+
+🌏 The problem: Blast fishing across Southeast Asia shatters reef frameworks into unstable rubble on slopes of 15°–45°, making natural coral recovery virtually impossible. On Pom Pom Island (Malaysia), less than 5% coral cover remains — decades of damage caused in seconds.
+
+🐚 Tropical Research And Conservation Centre (TRACC) is fighting back with an elegant, low-cost solution: modular, 3D-printed reef structures made from locally available cement and sand. Each mould can cast 1,000+ modules — potentially creating over 3,125 m² of new substrate for corals to settle and grow on sloping reefs.
+
+Project: https://lnkd.in/gjtZBKt2
+PADI: https://lnkd.in/gsxdVCeu
+
+After some calibration and image undistortion preprocessing I ran our latest system, AllFeature-VSLAM, which tightly couples multiple types of features (ORB and SuperPoint in this case).
+
+🎬Video: https://lnkd.in/gFBz-eds
+
+Huge thanks to everyone involved: Emilio Olivastri, Dr Brett Lewis, Scott Bryan, Roima Paewai-Huggins, Robin Philippo, Tobias Fischer, Michael Milford, QUT (Queensland University of Technology), QUT Centre for Robotics.
+
+cc: Beverley Gorry, Chelim Lim, Faye Diederiks, Maren Toor, Malika Meghjani, Mohit Singh, Jonathan Sauder, Scarlett Raine, Vincent Raoult
+
+VSLAM-LAB: https://lnkd.in/gGZifSb3
+
+#CoralRestoration #MarineConservation #CoralReef #OceanHealth #3DReconstruction #Sustainability #CommunityLed #SoutheastAsia #Biodiversity
+
+Next Post: https://lnkd.in/gb9GX5Cr - AllFeature-VSLAM runs in MADMAX dataset
+Previous Post: https://lnkd.in/g_wasjPH AllFeature-VSLAM runs in QUT Space Yandiwanba
