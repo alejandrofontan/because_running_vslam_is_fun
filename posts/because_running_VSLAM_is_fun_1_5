@@ -1,0 +1,41 @@
+Because running VSLAM is fun (1.5) 📷🧭📍
+
+🎬 Video: [VIDEO_LINK]
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://github.com/alejandrofontan/AllFeature-VSLAM
+
+Adding a new dataset to VSLAM-LAB is now one CLAUDE skill:
+
+claude skill add-dataset dataset_name url
+
+Point it at a dataset page and CLAUDE writes the integration: download, extraction, rgb, intrinsics, ground truth, everything in the VSLAM-LAB format, ready for every system in the benchmark.
+
+To put it to the test, I used it to integrate the NSAVP dataset (Novel Sensors for Autonomous Vehicle Perception), recorded by the University of Michigan on ~8 km driving routes through Ann Arbor under varied lighting conditions. NSAVP also ships stereo event and stereo thermal cameras.
+🌐 Dataset: https://umautobots.github.io/nsavp
+
+Then I ran AllFeature-VSLAM, tightly coupling ORB + ALIKED features, with two precomputed additions that make the difference on driving data:
+
+🚫 Dynamic object removal with Mask2Former: points falling on cars, pedestrians and other movers are segmented out.
+
+📏 Depth from stereo with FastFoundationStereo: every feature gets metric depth from the stereo pair at initialization, giving a metrically scaled trajectory from the first frame.
+
+The whole experiment is fully reproducible with a small YAML file:
+
+exp_allfeature-dev:
+  Config: config_nsavp.yaml
+  NumRuns: 1
+  Parameters: {verbose: 1, segmentation: mask2former, mode: rgbd, depth: fastfoundationstereo}
+  Module: allfeature-dev
+
+Huge thanks to team behind NSAVP, Spencer Carmichael, Austin Buchan, Mani Ramanagopal, Radhika Ravi, Ram Vasudevan and Katherine A. Skinner, for building and open-sourcing the benchmark. 📣 This integration was done by CLAUDE and me, if you spot anything we got wrong, or any way to squeeze more out of your dataset, please reach out or make a pull request.
+
+To the authors of Mask2Former and FastFoundationStereo for open-sourcing the models that made this pipeline possible.
+
+And to the ORB-SLAM2 authors — AllFeature-VSLAM builds upon their work.
+
+Previous post: https://www.linkedin.com/posts/alejandro-fontan-villacampa-994a1794_vslam-lab-orb-slam3-runs-rgb-d-data-from-activity-7456286580832382976-dq9I?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQVfcAB1J2HFxP8_b70p84rObmhGhQJphU - Recording your own RGB-D dataset with the Stray Scanner App and running it through VSLAM-LAB
+
+hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
+hashtag#ComputerVision hashtag#VSLAMLAB hashtag#AutonomousDriving hashtag#StereoVision hashtag#SemanticSegmentation hashtag#ClaudeCode
+
+🎬 Video: [VIDEO_LINK]

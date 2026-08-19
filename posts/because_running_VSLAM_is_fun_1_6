@@ -1,0 +1,35 @@
+Because running VSLAM is fun (1.6) 📷🧭📍
+
+🎬 Video: https://youtu.be/rarbvT02_7w
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://github.com/alejandrofontan/AllFeature-VSLAM
+
+This time: monocular VSLAM on the Málaga Stereo and Laser Urban Data Set, a car driven through the streets of Málaga, with high-rate rectified stereo, LiDAR and GPS. A 2014 classic of urban SLAM benchmarking: sunlight, traffic, pedestrians, and long drives with plenty of chances to drift.
+🌐 Dataset: https://www.mrpt.org/MalagaUrbanDataset
+
+I ran AllFeature-VSLAM in monocular mode, tightly coupling two feature types from opposite ends of a decade of research:
+
+🌀 A-KAZE: a handcrafted classic, detecting and describing features in nonlinear scale space.
+🔗 https://github.com/pablofdezalc/akaze
+
+🧠 ALIKED: a modern learned feature, with deformable convolutions and a lightweight descriptor network.
+🔗 https://github.com/Shiaoming/ALIKED
+
+Handcrafted and learned features, matched and optimised together in the same monocular pipeline, that is what the AllFeature coupling is for.
+
+The whole experiment is one command: pixi run demo allfeature-dev malaga 01
+
+The Málaga integration into VSLAM-LAB was, once again, one CLAUDE skill: point it at the dataset page and the download, extraction, rgb, intrinsics and ground truth come out in the VSLAM-LAB format, ready for every system in the benchmark.
+
+Thanks to José-Luis Blanco-Claraco, Francisco-Ángel Moreno-Dueñas and Javier González-Jiménez for building and open-sourcing the Málaga Urban Dataset. 📣 This integration was done by CLAUDE and me, if you spot anything we got wrong, or any way to squeeze more out of your dataset, please reach out or make a pull request.
+
+To Pablo Fernández Alcantarilla and co-authors for A-KAZE, and to Xiaoming Zhao and co-authors for ALIKED.
+
+And to the ORB-SLAM2 authors, AllFeature-VSLAM builds upon their work.
+
+Previous post: https://www.linkedin.com/posts/alejandro-fontan-villacampa-994a1794_allfeature-vslam-on-the-nsavp-driving-dataset-share-7493543527713435648-qn50/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQVfcAB1J2HFxP8_b70p84rObmhGhQJphU - Integrating the NSAVP dataset with one CLAUDE skill and running AllFeature-VSLAM with dynamic object removal and stereo depth
+
+hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
+hashtag#ComputerVision hashtag#VSLAMLAB hashtag#AutonomousDriving hashtag#FeatureMatching hashtag#DeepLearning hashtag#ClaudeCode
+
+🎬 Video: https://youtu.be/rarbvT02_7w
