@@ -1,0 +1,32 @@
+Because running VSLAM is fun (1.7) 📷🧭📍
+
+🎬 Video: https://youtu.be/ol8h84xx6S4
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://github.com/alejandrofontan/AllFeature-VSLAM
+
+This time, no dataset: a movie. The opening of Touch of Evil (Orson Welles, 1958) is one of the most famous long takes in cinema. Three and a half uncut minutes: a bomb goes into the trunk of a car, and a crane-mounted camera follows it through the streets of a border town, gliding over crowds, traffic, goats, and a newlywed couple, all the way to the border checkpoint. Black and white, 1958 film grain, moving people and cars everywhere, and a camera whose intrinsics nobody wrote down.
+
+There is no calibration target in a Welles shot. So I calibrated zero-shot with AnyCalib: one frame in, intrinsics out. It regresses a ray for every pixel and recovers the camera model in closed form, no target, no video, no assumptions about which camera Russell Metty was operating.
+🔗 https://github.com/javrtg/AnyCalib
+🔗 Try it in the browser: https://huggingface.co/spaces/javrtg/AnyCalib
+📄 https://arxiv.org/abs/2503.12701
+
+Points on movers break the static-world assumption of the pipeline, so I ran segmentation online, inside the tracking loop, with EfficientViT-SAM from MIT HAN Lab: Segment Anything with its heavy image encoder swapped for EfficientViT, fast enough to run on every frame. Features landing on people and vehicles are masked out before they ever reach the map, at a cost the tracker barely notices.
+🔗 https://github.com/mit-han-lab/efficientvit
+📄 https://arxiv.org/abs/2402.05008
+
+Then AllFeature-VSLAM, monocular, tightly coupling three feature types in the same map, named here by their descriptor size: ORB-32, ALIKED-128: a learned detector and descriptor, 128 floats.
+and SIFT-128, matched and optimised together on a 1958 negative.
+
+The whole experiment is one command: pixi run demo allfeature-dev youtube touch-of-evil
+
+Thanks to Javier Tirado-Garín and Javier Civera for AnyCalib (ICCV 2025).
+
+To Zhuoyang Zhang, Han Cai and Song Han for EfficientViT-SAM.
+
+Previous post: https://lnkd.in/p/gZQHP5SK - Monocular AllFeature-VSLAM on the Málaga Urban Dataset, coupling A-KAZE and ALIKED
+
+hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
+hashtag#ComputerVision hashtag#VSLAMLAB hashtag#CameraCalibration hashtag#SegmentAnything hashtag#FeatureMatching hashtag#DeepLearning hashtag#TouchOfEvil hashtag#OrsonWelles
+
+🎬 Video: https://youtu.be/ol8h84xx6S4
