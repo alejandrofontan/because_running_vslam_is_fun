@@ -1,8 +1,10 @@
-Because running VSLAM is fun (1.6) 📷🧭📍
+Because running #VSLAM is fun (1.6) 📷🧭📍
+
+Running #VSLAM through the Streets of #Malaga
 
 🎬 Video: https://youtu.be/rarbvT02_7w
 🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
-🔗 AllFeature-VSLAM: https://github.com/alejandrofontan/AllFeature-VSLAM
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
 
 This time: monocular VSLAM on the Málaga Stereo and Laser Urban Data Set, a car driven through the streets of Málaga, with high-rate rectified stereo, LiDAR and GPS. A 2014 classic of urban SLAM benchmarking: sunlight, traffic, pedestrians, and long drives with plenty of chances to drift.
 🌐 Dataset: https://www.mrpt.org/MalagaUrbanDataset
@@ -29,7 +31,7 @@ And to the ORB-SLAM2 authors, AllFeature-VSLAM builds upon their work.
 
 Previous post: https://www.linkedin.com/posts/alejandro-fontan-villacampa-994a1794_allfeature-vslam-on-the-nsavp-driving-dataset-share-7493543527713435648-qn50/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQVfcAB1J2HFxP8_b70p84rObmhGhQJphU - Integrating the NSAVP dataset with one CLAUDE skill and running AllFeature-VSLAM with dynamic object removal and stereo depth
 
-hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
-hashtag#ComputerVision hashtag#VSLAMLAB hashtag#AutonomousDriving hashtag#FeatureMatching hashtag#DeepLearning hashtag#ClaudeCode
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+#ComputerVision #VSLAMLAB #AutonomousDriving #FeatureMatching #DeepLearning #ClaudeCode
 
 🎬 Video: https://youtu.be/rarbvT02_7w

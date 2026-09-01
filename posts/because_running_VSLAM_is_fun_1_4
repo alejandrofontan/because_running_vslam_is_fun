@@ -1,7 +1,10 @@
-Because running VSLAM is fun (1.4) 📷🧭📍
+Because running #VSLAM is fun (1.4) 📷🧭📍
 
-🎬 Video:https://youtu.be/mLIFRiAxRs4
+Running #VSLAM on your own #iPhone #RGBD Recordings
+
+🎬 Video: https://youtu.be/mLIFRiAxRs4
 🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
 
 Using the Stray Scanner App, I recorded an RGB-D dataset at Old Parliament House, straight from a LiDAR-enabled iPhone. The app gives direct access to the raw RGB-D video it captures, and outputs a simple .zip file with your data.
 
@@ -29,7 +32,7 @@ cc: Pablo Vela — I cannot keep up with your implementation pace, but I'll try 
 
 Previous post: [PREVIOUS_POST_LINK] - AllFeature-VSLAM, DROID-SLAM and MASt3R-SLAM run Fjaðrárgljúfur canyon in Iceland
 
-hashtag#VSLAM hashtag#SpatialAI hashtag#SLAM hashtag#VisualSLAM hashtag#Robotics
-hashtag#ComputerVision hashtag#VSLAMLAB hashtag#iOS hashtag#LiDAR hashtag#RGBDepth hashtag#rerun
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+#ComputerVision #VSLAMLAB #iOS #LiDAR #RGBDepth #rerun
 
 🎬 Video: https://youtu.be/mLIFRiAxRs4

@@ -1,8 +1,12 @@
-Because running VSLAM is fun (1.2) 📷🧭📍
+Because running #VSLAM is fun (1.2) 📷🧭📍
 
-Following up on the previous experiments, I ran our latest system, AllFeature-VSLAM, tightly coupling multiple feature types (ORB, SIFT and SuperPoint).
+Running #VSLAM on the #MarsAnalog #MADMAX Dataset
 
 🎬 Video: https://lnkd.in/gtFMjWBn
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
+
+Following up on the previous experiments, I ran our latest system, AllFeature-VSLAM, tightly coupling multiple feature types (ORB, SIFT and SuperPoint).
 
 This time using the #MADMAX dataset — a Mars-analog dataset acquired in the Moroccan desert using DLR’s portable SUPER sensor unit. It includes 36 navigation experiments across 8 diverse sites, with over 9.2 km of trajectories, covering challenging environmental conditions such as illumination changes, texture scarcity, and varying terrain.
 

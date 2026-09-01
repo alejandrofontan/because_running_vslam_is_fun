@@ -1,0 +1,22 @@
+Because running #VSLAM is fun (1.8) 📷🧭📍
+
+Running #VSLAM on #EyeTracking Glasses: the #PupilInvisible
+
+🎬 Video: https://youtu.be/sXGqEjbZegM
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
+
+I recorded a sequence walking around the living room wearing Pupil Invisible glasses from Pupil Labs: eye-tracking glasses with a forward-facing scene camera, worn like ordinary glasses. Egocentric footage is different from a hand-held or car-mounted camera: every glance is a rotation, every step a bounce, and the scene is an ordinary living room, textureless walls, close-range parallax, furniture everywhere.
+🌐 Pupil Invisible: https://pupil-labs.com
+
+I ran AllFeature-VSLAM in monocular mode, tightly coupling two feature types in the same map: ORB and ALIKED.Handcrafted and learned features, matched and optimised together in the same monocular pipeline.
+
+A Pupil wrapper is available in VSLAM-LAB to record your own sequence with a Pupil AR device, point VSLAM-LAB at it, and it comes out in the VSLAM-LAB format, ready for every system in the benchmark. Try it on your own recordings.
+
+Thanks to Tobias Fischer for lending me the Pupil Invisible glasses. Looking forward to running more experiments with these amazing devices — or with the Aria ones if I can get a pair :)
+
+Previous post: https://lnkd.in/p/g9MWA-qt - Monocular AllFeature-VSLAM on the opening long take of Touch of Evil (1958), with zero-shot calibration from AnyCalib and online segmentation with EfficientViT-SAM
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+#ComputerVision #VSLAMLAB #EyeTracking #EgocentricVision #WearableComputing #FeatureMatching #DeepLearning
+🎬 Video: https://youtu.be/sXGqEjbZegM
