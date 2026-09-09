@@ -1,0 +1,27 @@
+Because running #VSLAM is fun (1.9) 📷🧭📍
+
+Running #VSLAM on a dataset I built to break it: the #MinimalTexture dataset
+
+🎬 Video: https://youtu.be/orWEmR-wtQs
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
+
+This time the dataset is mine, and it is not on my side. During my PhD at DLR, together with Riccardo Giubilato, we recorded the Minimal Texture dataset to test what happens when you push RGB-D visual odometry to the very edge of what an image can tell you. The question back then was whether tightly fusing feature-based and photometric errors in one cost function could survive where each alone could not. That work became SID-SLAM (RA-L 2023).
+📄 https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10058038&casa_token=c8n7LB1eTOAAAAAA:zxmF59STHx5mEyBjcWN4zZuoWgkeGuRRZjkzW4HlNgn06HcwnpDQlHpfsYMri4XtAonoNdv6JwyD&tag=1
+
+The dataset is conceptually simple and deliberately cruel. RGB-D sequences from a RealSense D435i with millimetre Vicon ground truth, designed around degenerate visual configurations: scenes with no corners and only circular edges, scenes where every edge points in the same direction, a single square on a wall giving you exactly four corner-like features, feature sparsity, and visual aliasing where every keypoint looks like its neighbour. A black polygon on a white wall is a complete SLAM problem, if you can extract anything at all.
+
+Back then, the features-only ablation failed in every Extreme Geometry sequence. Now I am on the other side of the table: AllFeature-VSLAM is a feature-based pipeline, and this dataset bites it in almost every sequence.
+
+So I ran the Hexagon sequence, tightly coupling three feature types in the same map, named by their descriptor size: ORB-32, ALIKED-128 and SuperPoint-256. Handcrafted and learned, matched and optimised together on six corners and six edges. Three detectors looking at the same hexagon, and none of them was designed for a world with nothing in it.
+
+The whole experiment is one command: pixi run demo allfeature-dev minimal_texture hexagon
+
+Thanks to Riccardo Giubilato for building this dataset with me at DLR, and to Laura Oliva, Javier Civera and Rudolph Triebel, co-authors of SID-SLAM.
+
+Previous post: https://www.linkedin.com/posts/alejandro-fontan-villacampa-994a1794_running-vslam-on-eyetracking-glasses-the-activity-7500483800167170048-QusT?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQVfcAB1J2HFxP8_b70p84rObmhGhQJphU - Monocular AllFeature-VSLAM on egocentric footage from Pupil Invisible eye-tracking glasses, coupling ORB and ALIKED
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+#ComputerVision #VSLAMLAB #RGBD #VisualOdometry #FeatureMatching #DeepLearning #DLR #SemiDirectSLAM
+
+🎬 Video: https://youtu.be/orWEmR-wtQs
