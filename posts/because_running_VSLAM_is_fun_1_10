@@ -1,0 +1,36 @@
+Because running #VSLAM is fun (1.10) 📷🧭📍
+
+Running #FeedForward 3D reconstruction on a #Roman tower: #CentumCellas
+
+🎬 Video: https://youtu.be/FzkJSmZhhJI
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 MapAnything: https://github.com/facebookresearch/map-anything
+🔗 VGGT-SLAM: https://github.com/MIT-SPARK/VGGT-SLAM
+
+Feed-forward reconstruction on drone footage from Isaac M.'s YouTube channel, Ancient Technology, of which I am a big fan. Four feed-forward models, plus #VGGT-SLAM and #COLMAP
+
+Isaac Moreno Gallo is a civil engineer and historian who has spent decades measuring Roman roads, bridges and aqueducts, and explaining them on camera. For those of you who have not watched him yet, visit his channel, where he spreads the word on engineering in Roman times.
+🌐 https://www.youtube.com/@IsaacMorenoGallo
+
+Centum Cellas stands on the Roman road between Emerita Augusta (Mérida) and Bracara Augusta (Braga). A three-storey granite tower, some twelve metres tall, most likely the core of the villa of Lucius Caecilius, a tin merchant. The name may mean "one hundred rooms", and nobody is quite sure what it was for. What is beyond doubt is the workmanship: doors and windows in perfect symmetry, every ashlar cut to fit its neighbour with no visible tolerance. Isaac puts it better than I can: it looks like it was designed in AutoCAD.
+📍 https://maps.app.goo.gl/PMQt6Br9HAeAgoVL9
+
+I ran some four models hosted in the MapAnything repository, one experiment each, same frame budget: every 175th frame, at most 35 views. MapAnything, MASt3R, VGGT and π³-X.
+
+All of them run through MapAnything's model factory wrappers, now also available through VSLAM-LAB. And all of them work without calibration: no intrinsics, no depth, just the frames. I also ran VGGT-SLAM and COLMAP on the same footage, to see how SLAM and traditional structure-from-motion compare with a single feed-forward pass.
+
+Thanks to Isaac Moreno Gallo for the footage. I hope to keep reconstructing more of his wonderful footage in the posts to come.
+
+To the authors of MapAnything for a codebase that makes running all these reconstruction models so easy: Nikhil Varma Keetha, Norman Müller, Johannes Schönberger, Lorenzo Porzi, Yuchen Zhang, Tobias Fischer, Arno Knapitsch, Duncan Zauss, Ethan Weber, Nelson Antunes, Jonathon Luiten, Manuel López Antequera, Samuel Rota Bulò, Christian Richardt, Deva Ramanan, Sebastian Scherer and Peter Kontschieder
+
+To the authors of VGGT-SLAM:  Dominic Maggio, Luca Carlone
+
+And COLMAP: Johannes Schönberger ... 🤩
+
+Previous post: https://lnkd.in/p/g5mkc-6S - AllFeature-VSLAM on the Minimal Texture dataset, coupling ORB, ALIKED and SuperPoint on a hexagon with nothing in it
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+
+#ComputerVision #VSLAMLAB #3DReconstruction #FeedForward #MapAnything #VGGT #DUSt3R #MASt3R #COLMAP #StructureFromMotion #RomanEngineering #CentumCellas #IngenieriaRomana
+
+🎬 Video: https://youtu.be/FzkJSmZhhJI
