@@ -1,0 +1,28 @@
+Because running #VSLAM is fun (1.11) 📷🧭📍
+
+Running #VSLAM in a #vineyard with a learned place recognition backend: the #BLT dataset and #MegaLoc
+
+🎬 Video: [VIDEO_LINK]
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
+🔗 MegaLoc: https://github.com/gmberton/megaloc
+🔗 BLT dataset: https://lcas.lincoln.ac.uk/wp/research/data-sets-software/blt/
+
+The BACCHUS Long-Term (BLT) dataset comes from the Lincoln Centre for Autonomous Systems. A Thorvald II robot drives the same 500 m topological path through the Ktima Gerovassiliou vineyard in Epanomi, Greece, again and again across the whole 2022 growing season: eleven sessions from bare vines in March to full canopy in September. Front ZED2 RGB-D imagery, RTK-GNSS ground truth, and a robot deployed autonomously so every session follows the same route.
+📄 https://doi.org/10.1002/rob.22228
+
+Place recognition in AllFeature-VSLAM. The Bag-of-Words vocabulary is gone: loop and relocalisation candidates now come from MegaLoc, running natively inside the C++ pipeline as an ONNX model.
+
+⏱️ At 5:00 in the video you can see the loop closure and the full graph correction that follows it. Watch the kernel of the graph as the robot revisits its earlier trajectory: the characteristic diagonal lines appear, parallel to the main diagonal.
+
+Thanks to Riccardo Polvara, who also contributed the BLT integration to VSLAM-LAB, and to his co-authors of the BLT dataset: Sergi Molina, Ibrahim Hroob, Alexios Papadimitriou, Konstantinos Tsiolis, Dimitrios Giakoumis, Spiridon Likothanassis, Dimitrios Tzovaras, Grzegorz Cielniak and Marc Hanheide.
+
+To Gabriele Berton and Carlo Masone for MegaLoc.
+
+Previous post: https://lnkd.in/p/eqEzeCui - Feed-forward 3D reconstruction of the Roman tower of Centum Cellas with MapAnything, MASt3R, VGGT, π³-X, VGGT-SLAM and COLMAP
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+
+#ComputerVision #VSLAMLAB #VisualPlaceRecognition #VPR #LoopClosure #MegaLoc #ONNX #AgriRobotics #PrecisionAgriculture #FieldRobotics #RGBD #LCAS
+
+🎬 Video: [VIDEO_LINK]
