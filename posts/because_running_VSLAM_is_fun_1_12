@@ -1,0 +1,40 @@
+Because running #VSLAM is fun (1.12) 📷🧭📍
+
+How #VSLAMLAB ships its baselines
+
+🔗 Channel: https://prefix.dev/channels/@vslamlab/vslamlab
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+
+This post is about the plumbing behind VSLAM-LAB, which kept me busy until the very end of the week 😄
+
+VSLAM-LAB baselines were already conda packages, but built by hand from recipes kept apart from the code and uploaded to a personal Anaconda channel. So we rebuilt how VSLAM-LAB ships its baselines:
+
+📦 Our packages live on the VSLAM-LAB channel on prefix.dev.
+🧩 Each baseline repository declares its package in a [package] block of its own pixi.toml, built by pixi-build (Python or CMake backend). VSLAM-LAB just installs it.
+
+👤 Users: pixi run demo orbslam2 ... installs the prebuilt package from the channel. Nothing compiles, and pixi.lock pins every package by hash.
+🛠️ Developers: orbslam2-dev, droidslam-dev, ... clone the baseline's source and build it locally. Their environment comes from pixi's [dev] feature, which installs the package's build, host and run dependencies without building the package itself. Package and source read the exact same dependency list, so they can't drift apart.
+
+🧮 33 isolated environments, one package cache: pixi hard-links every environment from a single global cache, so identical packages are stored once. Where stacks must differ, only the differing builds cost extra space.
+
+🤖 CI on every baseline: GitHub Actions builds and tests each package on every push to main, and a vX.Y tag publishes it through prefix.dev trusted publishing, with no API key stored anywhere.
+
+⚡ CUDA as a build variant: a variants.yaml zips cuda_compiler_version with cuda_version, so one recipe produces the 12.6 and 12.9 builds, with the environments aligned on CUDA 12.9.
+
+💻 ORB-SLAM2, ORB-SLAM3 and COLMAP now run on linux-64, osx-arm64 and win-64.
+
+DROID-SLAM, DPVO, MASt3R-SLAM, VGGT-SLAM, ORB-SLAM2, ORB-SLAM3, OKVIS2 and AllFeature-VSLAM all follow this pattern.
+
+The preprocessing layer got the same treatment: zero-shot calibration, stereo and monocular depth, dynamic object masks, place recognition and refraction removal now each live in their own repository and pixi environment.
+
+📣 If something you used to run no longer runs, please open an issue or a pull request.
+
+Thanks to Tobias Fischer for the macOS and Windows support, and for the fruitful discussions and guidance that led to this upgrade.
+
+And to the #pixi and prefix.dev teams for the tooling and the channel, to conda-forge for everything underneath it, and to the authors of every baseline and capability packaged here.
+
+cc: Pablo Vela, hopefully the Blackwell issues you hit on your 5090 are fixed now!
+
+Previous post: https://lnkd.in/p/g7HvG2C9 - AllFeature-VSLAM in the BLT vineyard dataset with MegaLoc place recognition running natively in C++
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics #ComputerVision #VSLAMLAB #pixi #conda #prefixdev #GitHubActions #CUDA #Reproducibility #OpenSource #ClaudeCode
