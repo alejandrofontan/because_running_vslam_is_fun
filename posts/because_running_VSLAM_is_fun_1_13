@@ -1,0 +1,32 @@
+Because running #VSLAM is fun (1.13) 📷🧭📍
+
+Four years of research in one video: running #VSLAM #underwater on a #CoralReef at #LizardIsland
+
+🎬 Video: https://youtu.be/e-YPg0MknHk
+🔗 VSLAM-LAB: https://lnkd.in/gGZifSb3
+🔗 AllFeature-VSLAM: https://lnkd.in/gRztKMHT
+🔗 placecell: https://github.com/alejandrofontan/placecell
+
+The slide above is my research map: three nested layers of work, each built on the one around it. This video is the first time all of them run together, on a single sequence.
+
+The footage: a coral reef at Lizard Island, on the northern Great Barrier Reef, courtesy of Matt Dunbabin and Serean Mou. Flickering caustics on the seabed, colours fading with depth, fish swimming through the frame and coral that looks the same in every direction: a hard place for a camera to know where it is 🐠🪸
+
+From the outside in:
+
+🧪 VSLAM-LAB, the platform: seamless running, reproducibility and benchmarking. One command installs the baseline, downloads the data and runs it. Same footage, same command, same result on any machine.
+🧭 AllFeature-VSLAM, the real-time system: tightly couples feature types in a single pipeline. Here, ORB matched with brute force and ALIKED matched with LightGlue, both feeding the same tracking and optimisation.
+🗺️ Fundamental research, at the core: placecell is the scene view handler, managing the keyframe lifecycle. It builds a shared-information kernel out of the visual similarities between images, proposes new views and culls redundant ones.
+
+🌊 Beyond the code, underwater research: long-term, multi-session reconstruction and relocalisation of reefs under substantial appearance change, and refraction-aware reconstruction for flat-port cameras.
+
+👀 Watch the right side of the video: the placecell kernel, and below it the information contributed by each of the active keyframes.
+
+🛠️ I am actively maintaining and cleaning up VSLAM-LAB, AllFeature-VSLAM and placecell. If something breaks or is unclear, please open an issue or a pull request.
+
+Previous post: https://lnkd.in/p/eupf33Sj - How VSLAM-LAB ships its baselines: pixi-build packages on the prefix.dev channel, CI on every baseline, and linux, macOS and Windows support
+
+#VSLAM #SpatialAI #SLAM #VisualSLAM #Robotics
+
+#ComputerVision #VSLAMLAB #UnderwaterRobotics #MarineRobotics #CoralReef #GreatBarrierReef #LizardIsland #FieldRobotics #ResearchMap
+
+🎬 Video: https://youtu.be/e-YPg0MknHk
